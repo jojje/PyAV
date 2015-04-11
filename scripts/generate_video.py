@@ -28,8 +28,8 @@ def which(program):
 ffmpeg_cmd = None
 avconv_cmd = None
 
-if which('ffmpeg'):
-    ffmpeg_cmd = [which('ffmpeg'), '-y', '-f', 'lavfi', '-i']
+if which('ffmpeg.exe'):
+    ffmpeg_cmd = [which('ffmpeg.exe'), '-y', '-f', 'lavfi', '-i']
 if which('avconv'):
     avconv_cmd = [which('avconv'),'-y', '-filter_complex']
     
